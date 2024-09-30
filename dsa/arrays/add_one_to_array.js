@@ -1,4 +1,4 @@
-const INPUT = [9,0,9];
+const INPUT = [9, 0, 9];
 
 function addOneToArray(arr = []) {
   const reversedArray = arr.reverse();
@@ -13,9 +13,8 @@ function addOneToArray(arr = []) {
     if (carry !== 0) arr[i] = arr[i] % 10;
   }
 
-  if(carry)
-    arr.push(carry);
-  console.log("After Adding",arr.reverse().join(""));
+  if (carry) arr.push(carry);
+  console.log("After Adding", arr.reverse().join(""));
 }
 
 addOneToArray(INPUT);
